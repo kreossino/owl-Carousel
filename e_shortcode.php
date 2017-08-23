@@ -17,21 +17,7 @@ class owl_carousel_shortcodes extends e_shortcode
 {
 	public $override = false; // when set to true, existing core/plugin shortcodes matching methods below will be overridden. 
 
-	// Example: {_BLANK_CUSTOM} shortcode - available site-wide.
-	function sc_owl_carousel($parm = null)  // Naming:  "sc_" + [plugin-directory] + '_uniquename'
-	{
-		
-        //return "halooo";
-        
-	}
-    function sc_image_item($parm=''){
-        $image=$this->var['media_url'];
-                
-        //return e107::getParser()->parseTemplate($image)->render();
-        //return '<image src='.e107::getParser()->toHtml($image).'/>';
-        return e107::getParser()->toImage($image,$parm);
-    }
-    
+   
     function sc_jsowl($parm=null){
         $jsinline="
         (function($) {
