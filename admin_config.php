@@ -23,7 +23,7 @@ class owl_carousel_adminArea extends e_admin_dispatcher
 			'ui' 			=> 'owl_carousel_form_ui',
 			'uipath' 		=> null
 		),
-        'other1'	=> array(
+        	'other1'	=> array(
 			'controller' 	=> 'owl_carousel_image_ui',
 			'path' 			=> null,
 			'ui' 			=> 'owl_carousel_image_form_ui',
@@ -36,11 +36,11 @@ class owl_carousel_adminArea extends e_admin_dispatcher
 	
 	protected $adminMenu = array(
 
-		'main/list'			=> array('caption'=> 'Contents Carousel List', 'perm' => 'P'),
+		'main/list'		=> array('caption'=> 'Contents Carousel List', 'perm' => 'P'),
 		'main/create'		=> array('caption'=> 'Create Contents Carousel', 'perm' => 'P'),
 		//'main/prefs' 		=> array('caption'=> LAN_PREFS, 'perm' => 'P'),	
-        'other1/list'			=> array('caption'=> 'Images Carousel List', 'perm' => 'P'),
-        'other1/create'		=> array('caption'=> 'Create Images Carousel', 'perm' => 'P'),
+        	'other1/list'		=> array('caption'=> 'Images Carousel List', 'perm' => 'P'),
+        	'other1/create'		=> array('caption'=> 'Create Images Carousel', 'perm' => 'P'),
 
 		// 'main/custom'		=> array('caption'=> 'Custom Page', 'perm' => 'P')
 	);
@@ -60,9 +60,9 @@ class owl_carousel_ui extends e_admin_ui
 		protected $pluginTitle		= 'Owl Carousel';
 		protected $pluginName		= 'owl_carousel';
 	//	protected $eventName		= 'owl_carousel-owl_carousel'; // remove comment to enable event triggers in admin. 		
-		protected $table			= 'owl_carousel';
-		protected $pid				= 'owl_id';
-		protected $perPage			= 10; 
+		protected $table		= 'owl_carousel';
+		protected $pid			= 'owl_id';
+		protected $perPage		= 10; 
 		protected $batchDelete		= true;
 		protected $batchExport     = true;
 		protected $batchCopy		= true;
@@ -78,12 +78,12 @@ class owl_carousel_ui extends e_admin_ui
 		protected $listOrder		= 'owl_id DESC';
 	
 		protected $fields 		= array (  
-          'checkboxes'    =>   array ( 'title' => '', 'type' => null, 'data' => null, 'width' => '5%', 'thclass' => 'center', 'forced' => '1', 'class' => 'center', 'toggle' => 'e-multiselect',  ),
-		  'owl_id'        =>   array ( 'title' => 'ID', 'data' => 'int', 'width' => '5%', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
-		  'owl_name'      =>   array ( 'title' => 'Carousel Name', 'type' => 'text', 'data' => 'str', 'width' => 'auto', 'inline' => true, 'help' => '','required'=>'required', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
-		  'owl_chapter'   =>   array ( 'title' => 'Chapter','type' => 'dropdown', 'data' => 'int', 'width' => 'auto','inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'center', 'thclass' => 'center',  ),
-          'owl_template'  =>   array ('title'=> 'Select Template','type' => 'layouts','inline'=>true,'data' => 'str', 	'width' => 'auto', 'thclass' => 'left', 'writeParms' => 'plugin=owl_carousel&id=owl_carousel&merge=1', 'filter' => true),
-          'item_number'   =>   array ( 
+          	'checkboxes'    =>   array ( 'title' => '', 'type' => null, 'data' => null, 'width' => '5%', 'thclass' => 'center', 'forced' => '1', 'class' => 'center', 'toggle' => 'e-multiselect',  ),
+		'owl_id'        =>   array ( 'title' => 'ID', 'data' => 'int', 'width' => '5%', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
+		'owl_name'      =>   array ( 'title' => 'Carousel Name', 'type' => 'text', 'data' => 'str', 'width' => 'auto', 'inline' => true, 'help' => '','required'=>'required', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
+		'owl_chapter'   =>   array ( 'title' => 'Chapter','type' => 'dropdown', 'data' => 'int', 'width' => 'auto','inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'center', 'thclass' => 'center',  ),
+          	'owl_template'  =>   array ('title'=> 'Select Template','type' => 'layouts','inline'=>true,'data' => 'str', 	'width' => 'auto', 'thclass' => 'left', 'writeParms' => 'plugin=owl_carousel&id=owl_carousel&merge=1', 'filter' => true),
+          	'item_number'   =>   array ( 
                                 'title' => 'Number of items',
                                 'type' => 'number',
                                 'data' => 'int',
@@ -92,7 +92,7 @@ class owl_carousel_ui extends e_admin_ui
                                 'class' => 'center',
                                 'thclass' => 'center',  
                                 ),
-          'timeout'       =>   array ( 
+          	'timeout'       =>   array ( 
                                 'title' => 'Autoplay Timeout',
                                 'type' => 'number',
                                 'data' => 'int',
@@ -101,7 +101,7 @@ class owl_carousel_ui extends e_admin_ui
                                 'class' => 'center',
                                 'thclass' => 'center', 
                                 ),
-          'margin'        =>   array ( 
+          	'margin'        =>   array ( 
                                 'title' => 'Margin between item',
                                 'type' => 'number',
                                 'data' => 'int',
@@ -112,7 +112,7 @@ class owl_carousel_ui extends e_admin_ui
                                 'class' => 'left',
                                 'thclass' => 'left',  
                                 ),
-          'autoplay'      =>   array ( 
+          	'autoplay'      =>   array ( 
                                 'title' => 'Auto Play',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -123,7 +123,7 @@ class owl_carousel_ui extends e_admin_ui
                                 'class' => 'center',
                                 'thclass' => 'center',  
                                 ),
-          'navigation'    =>   array ( 
+          	'navigation'    =>   array ( 
                                 'title' => 'Arrow Navigation',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -134,7 +134,7 @@ class owl_carousel_ui extends e_admin_ui
                                 'class' => 'left',
                                 'thclass' => 'left',  
                                 ),
-          'dots'          =>   array ( 
+          	'dots'          =>   array ( 
                                 'title' => 'Display dots',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -146,7 +146,7 @@ class owl_carousel_ui extends e_admin_ui
                                 'thclass' => 'left',  
                                 ),                       
           
-          'owl_loop'         =>   array ( 
+          	'owl_loop'         =>   array ( 
                                 'title' => 'Loop Carousel',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -157,7 +157,8 @@ class owl_carousel_ui extends e_admin_ui
                                 'class' => 'left',
                                 'thclass' => 'left',  
                                 ),
-          'animatein'       => array (
+        /*  TODO : custom animation make a blank space between item.. weird!
+	'animatein'       => array (
                                 'title'  => 'Animation In',
                                 'type'   => 'dropdown',
                                 'data'   => 'str',
@@ -176,8 +177,8 @@ class owl_carousel_ui extends e_admin_ui
                                 'thclass' => 'left',
                                 'help' => 'This animation is for single carousel only',                                  
                                 ),
-          
-          'options' =>   array ( 'title' => LAN_OPTIONS, 'type' => null, 'data' => null, 'width' => '10%', 'thclass' => 'center last', 'class' => 'center last', 'forced' => '1',  ),
+          */
+          'options' 		=>   array ( 'title' => LAN_OPTIONS, 'type' => null, 'data' => null, 'width' => '10%', 'thclass' => 'center last', 'class' => 'center last', 'forced' => '1',  ),
 		);		
 		
 		protected $fieldpref = array('owl_name','owl_chapter','item_number','time_offset');
@@ -188,10 +189,8 @@ class owl_carousel_ui extends e_admin_ui
 	
 		public function init()
 		{
-			// Set drop-down values (if any). 
-            $sql = e107::getDb();
+	      $sql = e107::getDb();
                //Category Dropdown
-              // if(($sql->retrieve('page_chapters','chapter_parent','chapter_parent !=0')))
               $cid=$sql->retrieve('page_chapters','chapter_id', "chapter_sef='owlcarousel'");               
               
 	          
@@ -205,15 +204,14 @@ class owl_carousel_ui extends e_admin_ui
         		}
                $this->fields['owl_chapter']['writeParms'] = $this->chapter;
                
-               
+               /*
                $animIn=array ('slideInLeft','slideInRight','slideInUp','slideInDown','fadeIn','fadeInLeft','fadeInLeftBig','fadeInRight','fadeInRightBig','fadeInDown','fadeInDownBig','fadeInUp','fadeInUpBig');
                $animOut=array('slideOutLeft','slideOutRight','slideOutUp','slideOutDown','fadeOut','fadeOutLeft','fadeOutLeftBig','fadeOutRight','fadeOutRightBig','fadeOutDown','fadeOutDownBig','fadeOutUp','fadeOutUpBig');
                $aIn=array_combine($animIn,$animIn);
                $aOut= array_combine($animOut,$animOut);        	   
-                //$this->fields['item_number']['writeParms'] = '1';
-	           $this->fields['animatein']['writeParms']= $aIn;
+               $this->fields['animatein']['writeParms']= $aIn;
                $this->fields['animateout']['writeParms'] = $aOut;
-               
+               */
 		}
 
 		
@@ -290,14 +288,14 @@ class owl_carousel_form_ui extends e_admin_form_ui
 class owl_carousel_image_ui extends e_admin_ui
 {
         protected $pluginTitle		= 'Owl Carousel';
-		protected $pluginName		= 'owl_carousel';
-	//	protected $eventName		= 'owl_carousel-owl_carousel'; // remove comment to enable event triggers in admin. 		
-		protected $table			= 'owl_carousel_images';
-		protected $pid				= 'owl_id';
-		protected $perPage			= 10; 
-		protected $batchDelete		= true;
-		protected $batchExport     = true;
-		protected $batchCopy		= true;
+		protected $pluginName	= 'owl_carousel';
+	//	protected $eventName	= 'owl_carousel-owl_carousel'; // remove comment to enable event triggers in admin. 		
+		protected $table	= 'owl_carousel_images';
+		protected $pid		= 'owl_id';
+		protected $perPage	= 10; 
+		protected $batchDelete	= true;
+		protected $batchExport  = true;
+		protected $batchCopy	= true;
 
 	//	protected $sortField		= 'somefield_order';
 	//	protected $sortParent      = 'somefield_parent';
@@ -309,13 +307,13 @@ class owl_carousel_image_ui extends e_admin_ui
 	
 		protected $listOrder		= 'owl_id DESC';
 	
-		protected $fields 		= array (  
-          'checkboxes'    =>   array ( 'title' => '', 'type' => null, 'data' => null, 'width' => '5%', 'thclass' => 'center', 'forced' => '1', 'class' => 'center', 'toggle' => 'e-multiselect',  ),
-		  'owl_id'        =>   array ( 'title' => 'ID', 'data' => 'int', 'width' => '5%', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
-		  'owl_name'      =>   array ( 'title' => 'Carousel Name', 'type' => 'text', 'data' => 'str', 'width' => 'auto', 'inline' => true, 'help' => '','required'=>'required', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
-		  'image_category'   =>   array ( 'title' => 'Image Category','type' => 'dropdown', 'data' => 'str', 'width' => 'auto','inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'center', 'thclass' => 'center',  ),
-          'owl_template'  =>   array ('title'=> 'Select Template','type' => 'layouts','inline'=>true,'data' => 'str', 	'width' => 'auto', 'thclass' => 'left', 'writeParms' => 'plugin=owl_carousel&id=owl_carousel&merge=1', 'filter' => true),
-          'item_number'   =>   array ( 
+		protected $fields 	= array (  
+          	  'checkboxes'    	=>   array ( 'title' => '', 'type' => null, 'data' => null, 'width' => '5%', 'thclass' => 'center', 'forced' => '1', 'class' => 'center', 'toggle' => 'e-multiselect',  ),
+		  'owl_id'        	=>   array ( 'title' => 'ID', 'data' => 'int', 'width' => '5%', 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
+		  'owl_name'      	=>   array ( 'title' => 'Carousel Name', 'type' => 'text', 'data' => 'str', 'width' => 'auto', 'inline' => true, 'help' => '','required'=>'required', 'readParms' => '', 'writeParms' => '', 'class' => 'left', 'thclass' => 'left',  ),
+		  'image_category'   	=>   array ( 'title' => 'Image Category','type' => 'dropdown', 'data' => 'str', 'width' => 'auto','inline' => true, 'help' => '', 'readParms' => '', 'writeParms' => '', 'class' => 'center', 'thclass' => 'center',  ),
+          	  'owl_template' 	=>   array ('title'=> 'Select Template','type' => 'layouts','inline'=>true,'data' => 'str', 	'width' => 'auto', 'thclass' => 'left', 'writeParms' => 'plugin=owl_carousel&id=owl_carousel&merge=1', 'filter' => true),
+          	  'item_number' =>   array ( 
                                 'title' => 'Number of items',
                                 'type' => 'number',
                                 'data' => 'int',
@@ -324,7 +322,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'class' => 'center',
                                 'thclass' => 'center',  
                                 ),
-          'timeout'       =>   array ( 
+          	  'timeout'     =>   array ( 
                                 'title' => 'Autoplay Timeout',
                                 'type' => 'number',
                                 'data' => 'int',
@@ -333,7 +331,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'class' => 'center',
                                 'thclass' => 'center', 
                                 ),
-          'margin'        =>   array ( 
+          	  'margin'      =>   array ( 
                                 'title' => 'Margin between item',
                                 'type' => 'number',
                                 'data' => 'int',
@@ -344,7 +342,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'class' => 'left',
                                 'thclass' => 'left',  
                                 ),
-          'autoplay'      =>   array ( 
+          	  'autoplay'    =>   array ( 
                                 'title' => 'Auto Play',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -355,7 +353,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'class' => 'center',
                                 'thclass' => 'center',  
                                 ),
-          'navigation'    =>   array ( 
+          	  'navigation'  =>   array ( 
                                 'title' => 'Arrow Navigation',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -366,7 +364,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'class' => 'left',
                                 'thclass' => 'left',  
                                 ),
-          'dots'          =>   array ( 
+          	  'dots'        =>   array ( 
                                 'title' => 'Display dots',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -378,7 +376,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'thclass' => 'left',  
                                 ),                       
           
-          'owl_loop'         =>   array ( 
+          	'owl_loop'      =>   array ( 
                                 'title' => 'Loop Carousel',
                                 'type' => 'boolean',
                                 'data' => 'int',
@@ -390,7 +388,7 @@ class owl_carousel_image_ui extends e_admin_ui
                                 'thclass' => 'left',  
                                 ),
           
-          'options' =>   array ( 'title' => LAN_OPTIONS, 'type' => null, 'data' => null, 'width' => '10%', 'thclass' => 'center last', 'class' => 'center last', 'forced' => '1',  ),
+          	'options' =>   array ( 'title' => LAN_OPTIONS, 'type' => null, 'data' => null, 'width' => '10%', 'thclass' => 'center last', 'class' => 'center last', 'forced' => '1',  ),
 		);		
 		
 		protected $fieldpref = array('owl_name','image_category','item_number','time_offset');
@@ -402,9 +400,9 @@ class owl_carousel_image_ui extends e_admin_ui
 		public function init()
 		{
 			// Set drop-down values (if any). 
-            $sql = e107::getDb();
-               //Category Dropdown
-              // if(($sql->retrieve('page_chapters','chapter_parent','chapter_parent !=0')))
+            	$sql = e107::getDb();
+               //Gallery Dropdown
+
 	           if($sql->select('core_media_cat','*',' ORDER BY media_cat_id',true))
         		{
         			while ($row = $sql->fetch())
@@ -414,7 +412,7 @@ class owl_carousel_image_ui extends e_admin_ui
         		}
         		
         		$this->fields['image_category']['writeParms'] = $this->imagecat;
-                //$this->fields['item_number']['writeParms'] = '1';
+
 	
 		}
         public function beforeCreate($new_data)
