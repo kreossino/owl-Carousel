@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Owl Carousel" lan="" version="1.0" date="2017-08-12" compatibility="2.0" installRequired="true" >
+	<author name="drasehat" url="www.indraworkshop.com" />
+	<summary lan="">Owl Carousel Integration</summary>
+	<description lan="">Create and manage your carousel contents with Owl Carousel</description>
+	<keywords>
+		<word>generic</word>
+		<word>carousel</word>
+		<word>slider</word>
+	</keywords>
+	<category>content</category>
+	<copyright>created by : indras3hat</copyright>
+	<adminLinks>
+		<link url="admin_config.php" description="" icon="images/owl-carousel-32.png" iconSmall="images/owl-carousel-16.png" icon128="images/owl-carousel-128.png" primary="true" >LAN_CONFIGURE</link>
+	</adminLinks>
+</e107Plugin>

@@ -1,0 +1,192 @@
+/*-=-=-=-=-=-=-=-=- CSS FOR TEAM CAROUSEL =-=-=-=-=-=-=-=-=- */ 
+.team-item .owl-item img{
+   
+}
+.team-item{text-align: center;margin-bottom:40px}
+.team-item .team-photo img{max-height:200px; display: inline-block !important;
+    width: inherit !important;}
+.team-item .social-icon{font-size:25px}
+.team-item .social-icon a{padding:10px;color:#1292CC}
+.team-item .social-icon a:hover{color:#F16051;}
+.team-item .team-text p{line-height: 20px;font-size: 12px;}
+.team-item .team-name{font-size:20px;margin-top:10px;display:block}
+.team-item .title{font-size:14px;margin:10px 0;display:block;font-style: italic;color:#1292CC}
+.team-item .social-icon:after {
+	background: #F16051 none repeat scroll 0 0;
+	bottom: -20px;
+	content: "";
+	height: 3px;
+	left: 0;
+	position: absolute;
+	width: 40px;
+    left: 50%;
+    margin-left: -20px
+}
+
+/*-=-=-=-=-=-=-=-=- CSS FOR MAIN / SINGLE CAROUSEL =-=-=-=-=-=-=-=-=- */ 
+.sliderplugin .item{
+    background-attachment: fixed;
+    z-index: 1;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+    height:500px;   
+}
+.sliderplugin .item img{
+    display: block;
+        width: 100%;
+        height: auto;
+}
+.sliderplugin .item .animated{
+    -webkit-animation-delay: 0s;
+}
+.sliderplugin .owl-nav div {
+	background: transparent;
+	color: #fff;
+	font-size: 28px;
+	height: 85px;
+	left: 0;
+	line-height: 85px;
+	margin-top: -42.5px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	width: 35px;
+	z-index: 1
+}
+.sliderplugin .owl-nav div.owl-next {
+	left: auto;
+	right: 0;
+}
+.sliderplugin .owl-nav div:before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: #000;
+	z-index: -1;
+	opacity: .4;
+	left: 0;
+	top: 0;
+}
+
+.sliderplugin .owl-nav div:hover {
+	width: 85px;
+}
+.sliderplugin > h1 {
+	font-size: 48px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: #fff
+}
+
+.sliderplugin {
+	font-size: 16px;
+	color:#262626;
+}
+.owlContent{
+    margin-left:150px;
+}
+
+.sliderplugin .homeBtn {
+	margin-top: 35px;
+	-webkit-animation-duration: 1.8s;
+	animation-duration: 1.8s;
+}
+
+.sliderplugin .homeBtn a {
+	display: inline-block!important;
+	background: transparent;
+	line-height: 50px;
+	font-size: 14px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	position: relative;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 400;
+	-webkit-transition: .4s;
+	transition: .4s;
+	overflow: hidden;
+    border: 1px solid #fff
+}
+
+.sliderplugin .homeBtn a:hover {
+	color: #ffffff;
+	border-color: #1293CC
+}
+
+.sliderplugin .homeBtn a:before{
+    background: #1293CC
+}
+.sliderplugin .homeBtn a:last-child{
+	background: #1293CC;
+	margin-left: 6px;
+	color: #fff;
+    border: 1px solid #1293CC
+}
+
+.sliderplugin .homeBtn a:last-child:after{
+	display: none;
+}
+.sliderplugin .homeBtn a:last-child:before{
+	background: #2BABD8;
+}
+
+.homeBtn a:after {
+	content: '\f105';
+	/*line-height: 50px;*/
+	font-family: fontawesome;
+	-webkit-transition: .4s;
+	transition: .4s;
+    margin-left: 25px
+}
+@media only screen and (max-width:768px) {
+  #full-width{
+    padding: 0;
+  }
+  .item{
+    transform: scale(1);
+    height: 400px !important;
+  }
+  .active .item{
+    max-height: 400px;
+  }
+  .owlContent h1 {
+	font-size: 30px !important;
+}
+.owlContent{
+    margin-left:100px !important;
+    font-size: 14px !important;
+}
+}
+@media only screen and (max-width:420px) {
+  .item {
+    height: 200px !important;
+  }
+  .active .item{
+    max-height: 200px;
+  }
+  .owlContent h1 {
+	font-size: 20px !important;
+}
+.owlContent{
+    margin-left:50px !important;
+    font-size: 14px !important;
+}
+}
