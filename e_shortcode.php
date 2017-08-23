@@ -43,7 +43,7 @@ class owl_carousel_shortcodes extends e_shortcode
                 loop:".$parm['owl_loop'].",
                 autoplay:".$parm['autoplay'].",
                 margin:0,
-                                
+                smartSpeed:1000,                
                 autoplayTimeout:".$parm['timeout'].",
                 nav:".$parm['navigation'].",
                 navText: [
