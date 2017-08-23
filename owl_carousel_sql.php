@@ -26,6 +26,5 @@ CREATE TABLE `e107_owl_carousel_images` (
   `owl_loop` int(1) NOT NULL,
   `navigation` int(1) NOT NULL,
   `dots` int(1) NOT NULL,
-  `mobile` int(1) NOT NULL,
   PRIMARY KEY (`owl_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
