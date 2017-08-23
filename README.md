@@ -7,7 +7,7 @@ This plugin will create carousel based on :
 
 - media category 
 
-##how to create contents carousel
+## how to create contents carousel
 
 - create a chapter (fe : Staff Slider) make owlcarousel as it parent
 
@@ -19,7 +19,7 @@ This plugin will create carousel based on :
 
 All done.
 
-##how to create image carousel
+## how to create image carousel
 upload your images to media manager then set a category
 
 create image carousel then select media category that you created before.
